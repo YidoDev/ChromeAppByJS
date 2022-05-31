@@ -1,5 +1,7 @@
-document.title = "Hello, from JS";
+const title = document.querySelector(".hello h1:last-child");
 
-const title = document.getElementById("title");
+function handleTitleClick() {
+    console.log("title was clicked!");
+}
 
-title.innerText = "Got you!";
+title.addEventListener("click", handleTitleClick);
